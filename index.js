@@ -12,4 +12,12 @@ function FiltroPar(arr) {
 arr = [1,2,3,4,5,6]
 result = FiltroPar(arr)
 
+const express = require('express')
 
+const app = express()
+
+app.get('/', function (req, res) {
+    res.send('Nossa Api Funciona')
+})
+
+app.listen(8000)
